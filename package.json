@@ -1,0 +1,8 @@
+{
+  "name": "ab",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/ringohub/ab.git",
+  "author": "aoki",
+  "license": "MIT"
+}
