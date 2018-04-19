@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "ssh://git@github.com/ringohub/ab.git",
   "author": "aoki",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_DEBUG=true npm run start"
+  },
+  "dependencies": {
+    "botkit": "0.6.13",
+    "chalk": "2.4.0"
+  }
 }
