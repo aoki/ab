@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ab:
+    image: "aoki/ab"
+    links:
+      - cache
+    environment:
+      AB_SLACK_API_TOKEN: ${AB_SLACK_API_TOKEN}
+  cache:
+    image: "redis:3.0.7-alpine"
+    ports:
+      - 6379:6379

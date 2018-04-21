@@ -2,12 +2,15 @@
   "name": "ab",
   "version": "0.1.1",
   "main": "index.js",
+  "description": "ab is Aoki Bot using botkit.",
   "repository": "ssh://git@github.com/ringohub/ab.git",
   "author": "aoki",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "dev": "NODE_DEBUG=true npm run start"
+    "dev": "NODE_DEBUG=true npm run start",
+    "docker": "docker-compose up -d ab",
+    "docker:build": "docker build -t aoki/ab ."
   },
   "dependencies": {
     "botkit": "0.6.13",
