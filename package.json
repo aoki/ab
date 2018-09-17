@@ -8,12 +8,15 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "dev": "NODE_DEBUG=true npm run start",
+    "dev": "NODE_DEBUG=confluence-page-title npm run start",
     "docker": "docker-compose up -d ab",
     "docker:build": "docker build -t aoki/ab ."
   },
   "dependencies": {
-    "botkit": "0.6.13",
-    "chalk": "2.4.0"
+    "botkit": "0.6.16",
+    "chalk": "2.4.1",
+    "check-env": "1.3.0",
+    "isomorphic-fetch": "2.2.1",
+    "osmosis": "1.1.8"
   }
 }
