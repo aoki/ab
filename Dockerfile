@@ -1,4 +1,4 @@
-FROM node:carbon-alpine
+FROM node:10.13-alpine
 
 RUN npm i npm@latest -g
 WORKDIR /usr/src/app
