@@ -16,7 +16,7 @@ const confluencePageTitle = async (controller, option) => {
   const password = config.password;
 
   controller.hears(matchUrl, ['ambient'], (bot, msg) => {
-
+    debug(`Match URL: ${msg.match[0]}`);
     osmosis.get(msg.match[0])
       .login(user, password)
       .set({
@@ -29,7 +29,7 @@ const confluencePageTitle = async (controller, option) => {
         bot.reply(msg, d.title);
       } else {
         debug(`Restricted page ${d.title}`);
-        bot.reply(msg, 'This page *RESTRICTED* for read or write :cry:');
+        bot.reply(msg, 'This page is *RESTRICTED* to read or write :cry:');
       }
     });
   });

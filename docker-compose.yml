@@ -4,6 +4,7 @@ services:
     image: "aoki/ab"
     links:
       - cache
+    restart: always
     environment:
       AB_SLACK_API_TOKEN: ${AB_SLACK_API_TOKEN}
       HUBOT_CONFLUENCE_USER: ${HUBOT_CONFLUENCE_USER}
